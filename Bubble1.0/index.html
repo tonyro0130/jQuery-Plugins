@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Bubble Sample with jQuery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Minimalistic Slideshow Gallery with jQuery" />
+        <meta name="keywords" content="minimalistic, slideshow, jquery, gallery, thumbnails, css3"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script> 
+        <script type="text/javascript" src="jquery.Bubble-1.0.src.js"></script>
+        <script type="text/javascript"> 
+    <!-- 
+    $(document).ready(function() {
+        //jQuery.noConflict();
+		$('#sample2').setBubble({
+                                arrowColor: '#536298',
+                                bubbleType:   'triangle-isosceles',
+                                arrowPositionX:   'right',
+								arrowPositionY:   'bottom',
+								bubbleWidth: 200,
+                                backgroundStart:   '#536298',
+								backgroundEnd:   '#536251',
+								useArrow:'true'
+        });
+		$('#sample3').setBubble({
+                                arrowColor: '#335522',
+                                bubbleType:   'triangle-isosceles',
+                                arrowPositionX:   'left',
+								arrowPositionY:   'center',
+								bubbleWidth: 500,
+                                backgroundStart:   '#335522',
+								backgroundEnd:   '#FFFFFF',
+								useArrow:'false'
+        });
+		$('#sample4').setBubble({
+                                arrowColor: '#F3961C',
+                                bubbleType:   'triangle-isosceles',
+                                arrowPositionX:   'right',
+								arrowPositionY:   'center',
+								bubbleWidth: 200,
+                                backgroundStart:   '#F3961C',
+								backgroundEnd:   '#ffffff',
+								useArrow:'true'
+								
+        });
+		
+        $('#samplebtn1').makeBubble({
+                                arrowColor: '#F3961C',
+								bubbleType:   'triangle-isosceles',
+								bubblePosition:   'top',
+								bubbleWidth: 200,
+								backgroundStart:   '#FFFFFF',
+								backgroundEnd:   '#F3961C',
+								effectType: 'fade',
+								content:"This is sample for Bubble.",
+								useArrow:'true'
+        });
+		
+		$('#samplebtn2').makeBubble({
+                                arrowColor: '#845687',
+								bubbleType:   'triangle-isosceles',
+								bubblePosition:   'right',
+								bubbleWidth: 500,
+								backgroundStart:   '#845687',
+								backgroundEnd:   '#353535',
+								effectType: 'grow',
+								content:"This is sample for Sample Div.",
+								useArrow:'false'
+        });
+		
+		
+        
+    });
+     //--> 
+        </script>
+    </head>
+
+    <body>	
+		<div class="content">
+			<h1>Bubble Sample with jQuery : static Bubble.</h1>
+			<div id="sample2"><p>Triangle bubble with right arrow</p></div>
+			<div id="sample3"><p>Triangle bubble with top arrow</p></div>
+			<div id="sample4"><p>Triangle bubble with bottom arrow</p></div>
+			<h1>Bubble Sample with jQuery : Bubble for element</h1>
+<br>
+
+			<div><input type="button" value="Fade Effect Bubble" id="samplebtn1"/> </div>
+			<div> <input type="button" id="samplebtn2" style="cursor:pointer;width:200px;" value="asdfas"/>Please mouse over on this element.(Grow Effect)</div>
+        </div>
+    </body>
+</html>
