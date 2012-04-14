@@ -1,0 +1,141 @@
+/* ------------------------------------------
+PURE CSS SPEECH BUBBLES
+by Nicolas Gallagher
+- http://nicolasgallagher.com/pure-css-speech-bubbles/
+
+http://nicolasgallagher.com
+http://twitter.com/necolas
+
+Created: 02 March 2010
+Version: 1.2 (03 March 2011)
+
+Dual licensed under MIT and GNU GPLv2 © Nicolas Gallagher 
+------------------------------------------ */
+
+/* NOTE: Some declarations use longhand notation so that it can be clearly
+explained what specific properties or values do and what their relationship
+is to other properties or values in creating the effect */
+
+/* ============================================================================================================================
+== GENERAL STYLES
+** ============================================================================================================================ */
+
+body {
+    padding:0; 
+    margin:0; 
+    font:1em/1.4 Cambria, Georgia, sans-serif; 
+    color:#333; 
+    background:#fff;
+}
+
+a:link,
+a:visited {
+    border-bottom:1px solid #c55500; 
+    text-decoration:none;
+    color:#c55500; 
+}
+
+a:visited {
+    border-bottom:1px solid #730800; 
+    color:#730800;
+}
+
+#container {
+    width:500px; 
+    padding:0 0 50px; 
+    margin:0 auto;
+}
+
+h1 {
+    margin:1em 0 0; 
+    font-size:2.5em; 
+    font-weight:normal; 
+    line-height:1.2; 
+    text-align:center;
+}
+
+h2 {
+    margin:0.5em 0 1.5em; 
+    font-size:1.25em; 
+    font-weight:normal; 
+    font-style:italic; 
+    text-align:center;
+}
+
+p {
+    margin:1em 0;
+}
+
+.content h2 {
+    margin:2em 0 0.75em; 
+    font-size:2em; 
+    font-weight:bold; 
+    font-style:normal; 
+    text-align:left;
+}
+
+blockquote {
+    margin:1em 0;
+}
+
+blockquote p {
+    margin:0; 
+    font-size:2em;
+}
+
+.follow {
+    clear:both; 
+    margin-top:2em; 
+    font-size:1.125em;
+}
+
+.follow span {
+    font-weight:bold;
+}
+
+
+/* 
+ Should you want to set a background colour on a containing element
+ certain types of bubble effect may require you to include these 
+ style declarations.
+ */
+.content {
+    position:relative;
+    z-index:1;
+}
+.zipper_container{
+	width:292px;
+	height:186px;
+	position:relative;
+	overflow:hidden;
+}
+.zipper_background{
+	width:292px;
+	height:331px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url("../images/background.png") no-repeat scroll 50% 0 transparent;
+}
+.zipper_slider{
+	height: 140px!important;
+    left: 50%;
+    position: absolute!important;
+    top: 40px;
+	border:0!important;
+	background:none !important;
+}
+.link{
+    text-align: center;
+    width: 100%;
+}
+.ui-slider-handle{
+	background:url("../images/slot.png") no-repeat scroll 50% 0 transparent !important;
+	width:25px!important;
+	height:47px!important;
+	border:0!important;
+	margin-left:-9px!important;
+}
+.ui-slider-range{
+	background:none !important;
+}
